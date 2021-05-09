@@ -1,0 +1,6 @@
+#base image
+FROM python
+COPY . /project
+WORKDIR /project
+RUN pip install nltk
+CMD python project_cloud.py
